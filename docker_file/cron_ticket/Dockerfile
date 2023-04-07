@@ -9,7 +9,10 @@ FROM node:gallium-alpine3.16
 WORKDIR /app
 
 #Dest /app
-COPY app.js package.json ./
+COPY app.js ./
+
+#Dest /app
+COPY package.json ./
 
 #Instalar las dependencias
 RUN npm install
