@@ -9,13 +9,23 @@ FROM node:gallium-alpine3.16
 WORKDIR /app
 
 #Dest /app
-COPY app.js ./
+COPY package.json ./
 
 #Dest /app
-COPY package.json ./
+COPY  . ./
+#app.js ./
 
 #Instalar las dependencias
 RUN npm install
+
+#Realizar testing
+RUN npm run test
+
+#Eliminar archivos y directorios innecesarios en produccion.
+RUN rm -rf test && rm  -rf node_modules
+
+#Unicamente las dependencias de prod.
+RUN npm install --prod
 
 #Comando run de la imagen
 CMD ["node", "app.js"]
