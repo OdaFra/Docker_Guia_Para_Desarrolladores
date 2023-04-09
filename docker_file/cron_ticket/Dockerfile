@@ -2,7 +2,10 @@
 #Ejemplo para crear un dockerfile con una image de node sobre alpine
 #
 
+#Para especificar arquitectura
+#FROM --platform=linux/arm64 node:gallium-alpine3.16
 FROM node:gallium-alpine3.16
+
 # /app
 
 #cd /app
