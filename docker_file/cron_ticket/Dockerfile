@@ -4,6 +4,7 @@
 
 #Para especificar arquitectura
 #FROM --platform=linux/arm64 node:gallium-alpine3.16
+# FROM --platform=$BUILDPLATFORM node:gallium-alpine3.16
 FROM node:gallium-alpine3.16
 
 # /app
