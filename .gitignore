@@ -5,6 +5,10 @@
 # compiled output
 /dist
 /node_modules
+/pgadmin_postgress
+/pokemon-app
+/nest_graphql
+
 
 # Logs
 logs
