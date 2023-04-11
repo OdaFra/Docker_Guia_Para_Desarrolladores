@@ -36,3 +36,8 @@ COPY tasks/  ./tasks
 
 #Comando run de la imagen
 CMD ["node", "app.js"]
+
+#PARA LA CONSTRUCCION DE IMAGE
+# docker buildx build \
+# --platform linux/amd64,linux/arm64 \
+#  -t odafra/cron-ticker:cheetah --push .
