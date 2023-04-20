@@ -5,8 +5,6 @@ COPY package.json ./
 RUN yarn install
 CMD [ "yarn","start:dev" ]
 
-
-
 FROM node:19-alpine3.15 as dev-deps
 WORKDIR /app
 COPY package.json package.json
@@ -34,6 +32,20 @@ COPY --from=prod-deps /app/node_modules ./node_modules
 COPY --from=builder /app/dist ./dist
 
 CMD [ "node","dist/main.js"]
+
+#PARA CREAR IMAGE SEGUN ARQUITECTURA
+# docker buildx build \
+# --platform linux/amd64,linux/arm64,linux/arm/v7  \
+# -t odafra/teslo-shop:1.0.0 \
+# --push .
+
+
+
+
+
+
+
+
 
 
 
