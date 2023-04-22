@@ -6,7 +6,7 @@ services:
 
     build: 
       context: .
-      target: ${STAGE}
+      target: prod
       dockerfile: Dockerfile
 
     image: odafra/tesla-shop-backend
