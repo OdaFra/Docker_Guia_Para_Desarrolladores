@@ -1,14 +1,16 @@
-
 FROM node:19-alpine3.15 as dev
 WORKDIR /app
 COPY package.json ./
-RUN yarn install --network-timeout 1000
+RUN yarn install
 CMD [ "yarn","start:dev" ]
+
+
 
 FROM node:19-alpine3.15 as dev-deps
 WORKDIR /app
 COPY package.json package.json
-RUN yarn install --frozen-lockfile --network-timeout 1000
+RUN yarn install --frozen-lockfile
+
 
 FROM node:19-alpine3.15 as builder
 WORKDIR /app
@@ -20,7 +22,8 @@ RUN yarn build
 FROM node:19-alpine3.15 as prod-deps
 WORKDIR /app
 COPY package.json package.json
-RUN yarn install --prod --frozen-lockfile --network-timeout 1000
+RUN yarn install --prod --frozen-lockfile
+
 
 FROM node:19-alpine3.15 as prod
 EXPOSE 3000
