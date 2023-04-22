@@ -29,4 +29,12 @@ Ejecutar este comando
 
 docker compose -f docker-compose.prod.yml build
 
+```
+PARA CREAR IMAGE SEGUN ARQUITECTURA
+ docker buildx build \
+ --platform linux/amd64,linux/arm64 \
+ -t odafra/teslo-shop:1.0.0 \
+ --push .
+```
+
 
