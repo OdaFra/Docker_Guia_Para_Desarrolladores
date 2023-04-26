@@ -1,6 +1,6 @@
 **/pgadmin_postgres/
 **/pokemon-app/
-**/docker_file/deploy_and_register/teslo-shop-testing/
+**/docker_file/deployment_and_register/teslo-shop-testing/
 **/docker_file/cron_ticket/
 **/nest_graphql/
 **/.env
@@ -11,7 +11,7 @@
 /pgadmin_postgres
 /pokemon-app
 /nest_graphql
-/docker_file/deploy_and_register/teslo-shop-testing
+/docker_file/deployment_and_register/teslo-shop-testing
 
 
 # Logs
