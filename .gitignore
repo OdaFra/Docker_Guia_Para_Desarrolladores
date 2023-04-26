@@ -1,13 +1,19 @@
-**/pgadmin/
-**/postgres/
+**/pgadmin_postgres/
+**/pokemon-app/
+**/docker_file/docker_compose_build/teslo-shop/
+**/docker_file/cron_ticket/
+**/construccion_automaticas/
+**/nest_graphql/
 **/.env
 
 # compiled output
 /dist
 /node_modules
-/pgadmin_postgress
+/pgadmin_postgres
 /pokemon-app
 /nest_graphql
+/construccion_automaticas
+/docker_file/docker_compose_build/teslo-shop
 
 
 # Logs
