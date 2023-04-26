@@ -1,5 +1,7 @@
-**/pgadmin/
-**/postgres/
+**/pgadmin_postgress/
+**/pokemon-app/
+**/docker_file/deploy_and_register/
+**/nest_graphql/
 **/.env
 
 # compiled output
@@ -8,6 +10,7 @@
 /pgadmin_postgress
 /pokemon-app
 /nest_graphql
+/docker_file/deploy_and_register
 
 
 # Logs
