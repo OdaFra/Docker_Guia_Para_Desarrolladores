@@ -1,6 +1,4 @@
-**/pgadmin/
-**/postgres/
-**/docker_file/
+
 **/nest_graphql/
 **/construccion_automaticas/
 **/.env
@@ -8,6 +6,8 @@
 # compiled output
 /dist
 /node_modules
+/docker_file
+/construccion_automaticas
 
 # Logs
 logs
