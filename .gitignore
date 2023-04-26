@@ -1,7 +1,8 @@
-**/pgadmin_postgress
-**/pokemon-app
-**/docker_file/deploy_and_register
-**/nest_graphql
+**/pgadmin_postgress/
+**/pokemon-app/
+**/docker_file/deploy_and_register/teslo-shop-testing/
+**/docker_file/cron_ticket/
+**/nest_graphql/
 **/.env
 
 # compiled output
