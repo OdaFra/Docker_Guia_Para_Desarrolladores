@@ -1,5 +1,8 @@
 **/pgadmin/
 **/postgres/
+**/docker_file/
+**/nest_graphql/
+**/construccion_automaticas/
 **/.env
 
 # compiled output
